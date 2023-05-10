@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RecipeApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".DessertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LunchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BreakfastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllRecipesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SandwichActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PizzaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PancakesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OatmealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MacaroniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GrilledCheeseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EggsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CookiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChickenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaramelPopcornActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BananasFosterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

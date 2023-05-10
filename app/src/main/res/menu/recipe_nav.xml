@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuAllRecipes"
+        android:title="@string/menuAll"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuSavedRecipes"
+        android:title="@string/menuSaved"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuBreakfast"
+        android:title="@string/menuBreakfast"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuLunch"
+        android:title="@string/menuLunch"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuDinner"
+        android:title="@string/menuDinner"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuDessert"
+        android:title="@string/menuDessert"
+        app:showAsAction="never"/>
+</menu>
