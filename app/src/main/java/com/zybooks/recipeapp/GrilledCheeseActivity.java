@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class GrilledCheeseActivity extends AppCompatActivity {
 
@@ -16,6 +18,20 @@ public class GrilledCheeseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grilled_cheese);
+
+        SharedPreferences storeInfo = getSharedPreferences("savedRecipes", MODE_PRIVATE);
+        SharedPreferences.Editor editor = storeInfo.edit();
+
+        Button btnSave = (Button)findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editor.putString("GrilledCheese", "Apple & Bacon Grilled Cheese");
+                editor.apply();
+
+                Toast.makeText(GrilledCheeseActivity.this, "Recipe Saved", Toast.LENGTH_LONG).show();
+            }
+        });
 
         Button btnBack = (Button)findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
